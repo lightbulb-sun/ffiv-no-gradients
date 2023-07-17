@@ -1,27 +1,27 @@
 .gba
-.open "hack.gba", 0x08000000
+.open "hack-eu.gba", 0x08000000
 
-.org 0x0806939a
+.org 0x0806b30a
 .thumb
         ldrb    r3, [r1]
         strb    r3, [r4]
         strb    r3, [r5]
-        b       0x080693c8
+        b       0x0806b338
 
 ; change border color from teal to black
-.org 0x08390e34
+.org 0x084b0c5c
         .dh     0
-.org 0x083913c8
+.org 0x084b11f0
         .dh     0
-.org 0x0839195c
+.org 0x084b1784
         .dh     0
-.org 0x08391ef0
+.org 0x084b1d18
         .dh     0
-.org 0x08392484
+.org 0x084b22ac
         .dh     0
-.org 0x08392a18
+.org 0x084b2840
         .dh     0
-.org 0x083da304
+.org 0x084f34cc
         .dh     0
 
 .close
